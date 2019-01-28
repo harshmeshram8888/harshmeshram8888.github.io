@@ -1,0 +1,165 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%
+%% Modified by Aakash Patil(https://github.com/aakash30jan) (June 2016)
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstylef' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Harshwardhan}{Yuvraj Meshram}
+%\title{Meshram_CV}
+\insti{Hult International Business School}
+\address{1 Education Street}{Cambridge}{MA 02141 USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1-8578297614}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{hmeshram2018@student.hult.edu}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{logo.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\makecvtitle
+\noindent\begin{minipage}{.70\textwidth}
+  \makecvtitle
+\end{minipage}%
+\begin{minipage}{.30\textwidth}
+  \centering
+  \includegraphics[height=3cm]{logo.png}
+\end{minipage}
+\section{Education}
+\begin{cvcolumns}
+  \cvcolumn[0.30]{Program}{
+  \item Master in International Business %\newline{} 
+  \item Bachelor of Engineering
+  \item Higher Secondary Exam}
+  \cvcolumn[0.30]{Major}{
+  \item Business Analytics %\newline{}
+  \item Computer Science and Engineering
+  \item Computer Science }
+  \cvcolumn[0.30]{University}{
+  \item {Hult International Business School} %\newline{}                       
+  \item {SGB\textsuperscript{2} Amravati University, India} 
+  \item {Maharashtra State Board, India} }
+  \cvcolumn{Year}{
+  \item 2018-19\textsuperscript{*} %\newline{}                 
+  \item 2013-17
+  \item 2011-13}
+\end{cvcolumns}
+
+%\section{Course Work}
+\subsection{Key Courses}
+\cvlistdoubleitem{Global Economics}{Artificial Intelligence} 
+\cvlistdoubleitem{Project and Financial Management}{International Marketing}
+\cvlistdoubleitem{Future Mindset}{Computing Resource Management}
+\cvlistdoubleitem{Design \& Analysis of Algorithm }{Critical Analysis- Quantitative \& Qualitative}
+
+\\
+
+\section{ Achievements}
+\cvlistitem {Rewarded with a scholarship by Hult on my degree considering my previous grades.}
+\cvlistitem {Zonal Winner at NRC\textsuperscript{3} INDIA for India's Biggest Robotics Championship.}
+\cvlistitem {Zonal Winner at NNSC\textsuperscript{4} INDIA for CLOUD COMPUTING Championship.}
+\cvlistitem {Runner Up in Badminton (National Level) at Navoday Vidhyalaya ,India}
+
+\section{Key Projects}
+\cventry{Hult International Business School}{Supervisor: Prof. Kamesh V. Chivukula}{Project Management Simulation Report}{Oct 2018- November 2018}{}{}
+\cventry{PRPCEM\textsuperscript{1} University of Amravati,India}{Supervisor: Prof. Atul Jamnikar}{Blood Bank Application In Android}{Apr 2015- August 2015}{}{} % Details= Here Goes the discription of your project which later goes to webiste  ; Image=project1.png ; URL="http://unipune.ac.in/myLab/MyProject.pdf" \\
+
+\cventry{PRPCEM University of Amravati,India}{Supervisor: Prof. Mayur Bhurange}{Export Files To PDF in ASP.Net}{Apr 2016- August 2016}{}{} % Details= Here Goes the discription of your project which later goes to webiste  ; Image=project1.png ; URL="http://unipune.ac.in/myLab/MyProject.pdf" \\
+
+\cventry{PRPCEM University of Amravati,India}{Supervisor: Prof. Komal Bijwe}{Email System Based On Voice In Java}{Jan 2017-August 2017}{}{} % Details= Here Goes the discription of your project which later goes to webiste  ; Image=project1.png ; URL="http://unipune.ac.in/myLab/MyProject.pdf" 
+
+
+
+
+
+\section{Skills and Tools}
+\cvlistitem{Languages - C, C++, JAVA, PHP, ASP.Net, Python, JavaScript }
+\cvlistitem{Operating Systems -Windows, Android }
+\cvlistitem{Software and Libraries- MAT LAB,MySql, Microsoft SQL Server, Visual Studio, Net beans, Sublime text, Turbo C++, Dev C++}
+\cvlistitem{Version Control & Documentation- Git, LATEX, MS Office}
+
+}
+
+
+\section{WORK EXPERIENCE :}
+\cventry{}{GreenPanda.in was an organization in service sector dealing with customised web solutions \\and novel gTLD solutions. My work involved back-end developments for web-applications \\and web-server management.}{Co-Founder and Programmer, GreenPanda.in (Part-Time)}{Aug 2015- Jan 2018}{}{}
+
+%\cventry{Pune,India}{}{Organization:  Greenpanda.in , Web Customized Solutions}{Sep 2015- Jan 2018*}{}{}
+\end{itemize}
+
+
+\section{Extra - Curricular Activities}
+\begin{itemize}
+\item Co-Founded a Software Club at PRPCEM,Amravati with a vision of establishing a platform for our
+institute’s students to take part in Computer science & IT related projects and activities.          
+\item Participated in Techlons  2014 (International Level) at P.R.Pote College of engineering, Amravati.
+\item Participated in Prajwalan 2014 (International Level) at Government College of engineering, Amravati.
+\end{itemize}
+ \section{Objective}
+To secure a challenging internship to explore my interests in computer science and entry-level Project Manager position; to deliver project objectives within stipulated time, resource and budget constraints, and to align project execution with the strategy and ethics of the organization and also want to improve my skill set and contribute to
+the industry to my maximum.
+\section{Declaration}
+I hereby declare that all the information given above is true to the best of my knowledge as on \today.
+
+\newline
+\subsection{References}
+References and transcripts are available upon request.
+\vspace{3.5cm}
+
+\begin{center}
+\begin{figure}
+    %\centering
+    \includegraphics[scale=0.3,center]{./harsh_QR.png}
+    %\caption{} %or go to https://harshmeshram8888.github.io/getCV }}
+     
+\end{figure}
+\small{Please scan this QR code to download a copy of latest CV.}
+\end{center}
+
+\section {}
+\cvlistdoubleitem{\textsuperscript{*} \scriptsize{Expected to graduate in 2019 }}{\textsuperscript{1} \scriptsize{P. R. Pote College of Engineering and Management}}
+\cvlistdoubleitem{\textsuperscript{2} \scriptsize{Sant Gadge Baba}}{\textsuperscript{3} \scriptsize{National Robotics Championship}}
+\cvlistitem{\textsuperscript{4} \scriptsize{National Network Computing Championship}}
+
+%----------------------------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------------------------------------
+\end{document}
+
+
+%% end of file `template.tex'.
